@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "64c7a134-b041-4187-ba57-ae49e53babc1",
+		"name": "Practice 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home task 1,2,7,8",
+			"item": [
+				{
+					"name": "object_info_1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"age\", \"42\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url1}}object_info_1?age={{age}}&weigh=55&name={{name}}",
+							"host": [
+								"{{url1}}object_info_1"
+							],
+							"query": [
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "weigh",
+									"value": "55"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "object_info_3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url1}}object_info_3?age=42&salary=2000&name=Lera",
+							"host": [
+								"{{url1}}object_info_3"
+							],
+							"query": [
+								{
+									"key": "age",
+									"value": "42"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								},
+								{
+									"key": "name",
+									"value": "Lera"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_info_3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "{{start_qa_salary}}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url1}}user_info_3",
+							"host": [
+								"{{url1}}user_info_3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_info_4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "{{start_qa_salary}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url1}}user_info_4",
+							"host": [
+								"{{url1}}user_info_4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
