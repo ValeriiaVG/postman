@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "45a28c55-7c67-4ed2-817b-50da4ae4f860",
+		"name": "Practice_3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home task 3,6",
+			"item": [
+				{
+					"name": "object_info_2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url1}}object_info_2?age=42&salary=2000&name=Lera",
+							"host": [
+								"{{url1}}object_info_2"
+							],
+							"query": [
+								{
+									"key": "age",
+									"value": "42"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								},
+								{
+									"key": "name",
+									"value": "Lera"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_info_2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "{{start_qa_salary}}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url1}}user_info_2",
+							"host": [
+								"{{url1}}user_info_2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
