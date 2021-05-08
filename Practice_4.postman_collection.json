@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b369ef1b-a8e8-4cef-b25c-e4c75443b4c7",
+		"name": "Practice_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home task 4,5",
+			"item": [
+				{
+					"name": "object_info_4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url1}}object_info_4?age={{age}}&name={{name}}&salary={{start_qa_salary}}",
+							"host": [
+								"{{url1}}object_info_4"
+							],
+							"query": [
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "salary",
+									"value": "{{start_qa_salary}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_info_1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "55",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url1}}user_info_1",
+							"host": [
+								"{{url1}}user_info_1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
